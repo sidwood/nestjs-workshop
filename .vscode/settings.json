@@ -1,0 +1,32 @@
+{
+  "breadcrumbs.enabled": true,
+  "cSpell.language": "en-US",
+  "cSpell.words": ["nestjs", "Parens"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.fixAll.ts": "always"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnType": false,
+  "editor.guides.indentation": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "editor.rulers": [80, 100, 120],
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.useFlatConfig": true,
+  "eslint.validate": [
+    "html",
+    "javascript",
+    "javascriptreact",
+    "markdown",
+    "typescript",
+    "typescriptreact"
+  ],
+  "javascript.validate.enable": true,
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true
+}
