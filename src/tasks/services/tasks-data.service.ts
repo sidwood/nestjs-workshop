@@ -6,7 +6,7 @@ import { Task } from '@/tasks/entities/task.entity'
 export class TasksDataService {
   private readonly logger = new Logger(TasksDataService.name)
 
-  private tasks: Task[] = [
+  private _tasks: Task[] = [
     {
       id: 'abc123',
       title: 'Pickup groceries',
@@ -17,6 +17,14 @@ export class TasksDataService {
       deletedAt: null,
     },
   ]
+
+  get tasks(): Task[] {
+    return this._tasks
+  }
+
+  set tasks(tasks: Task[]) {
+    this._tasks = tasks
+  }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   findAll(query = { limit: 50, offset: 0 }) {
